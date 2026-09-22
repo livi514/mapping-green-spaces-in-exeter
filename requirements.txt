@@ -1,0 +1,9 @@
+geopandas
+osmnx
+pandas
+numpy
+scipy
+matplotlib
+folium
+mapclassify
+requests
