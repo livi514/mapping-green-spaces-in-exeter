@@ -1,6 +1,6 @@
 # Mapping Green Space in Exeter
 
-Which Exeter ward has the least green space? It depends entirely on how you measure it.
+Which Exeter ward has the least mapped green space? It depends on how you measure it.
 
 ![Percentage of green space by ward in Exeter](images/pct_green_natural_breaks.png)
 
@@ -39,21 +39,29 @@ The population data is from Census 2021, while the ward boundaries are from May 
 
 ## Repo Structure
 
-├── geopandas_project.ipynb
-├── requirements.txt
-├── README.md
-└── images/
+```text
+geopandas_project.ipynb
+requirements.txt
+README.md
+images/
 └── pct_green_natural_breaks.png
-
+```
 
 ## Running It
 
-1. Clone the repo and install dependencies:
+1. Clone the repo and install dependencies from the project root:
 
+```bash
+git clone <repo-url>
+cd geopandas-project
 pip install -r requirements.txt
+```
 
-2. Run the notebook top to bottom. The ward-boundary download tries the ArcGIS FeatureServer first and falls back to a local GeoPackage if that's present in the working directory and the service is unreachable.
-3. No API key is required for any of the data sources or map tiles used in this project.
+2. Open and run `geopandas_project.ipynb` from top to bottom.
+3. The ward-boundary download tries the ArcGIS FeatureServer first and falls back to a local GeoPackage if that file is present in the working directory and the service is unreachable.
+4. No API key is required for any of the data sources or map tiles used in this project.
+
+This notebook typically takes a few minutes to run, depending on network connectivity and the data download step.
 
 ## Tech Stack
 
